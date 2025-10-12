@@ -1,0 +1,23 @@
+body {
+  font-family: 'Poppins', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  background-color: #FFF2EF;
+}
+
+span {
+    color: #F36C5B
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 5rem;
+}
+
+button {
+    width: 20%;
+    font-size: 25px;
+    padding: 20px;
+    background-color: #F36C5B;
+    border-radius: 25px;
+    cursor: pointer;
+}
