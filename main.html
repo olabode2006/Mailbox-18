@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FikayoExpress</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="mainstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <link rel="stylesheet" href="mainstyle.css">
 </head>
 <body>
+
+    <!-- Music Toggle Button -->
+    <button id="musicBtn" onclick="toggleMusic()" title="Toggle music">
+        <i class="fas fa-music"></i>
+    </button>
+
+    <!-- Background music - replace src with your own audio file -->
+    <audio id="bgMusic" loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-happyrock.mp3" type="audio/mpeg">
+    </audio>
+
     <h1 class="center">FikayoExpress</h1>
     <h2 class="center">Celebrating 18 years of God's Mercy and Grace</h2>
     <h3 class="center">Your delivery service is activated on your big day!</h3>
@@ -17,25 +27,224 @@
     <div id="letter">
         <p id="lettertitle">18 Letters for your 18th Birthday</p>
         <div class="lettercontainer">
-        <div class="indletter">letter 1</div>
-        <div class="indletter">letter 2</div>
-        <div class="indletter">letter 3</div>
-        <div class="indletter">letter 4</div>
-        <div class="indletter">letter 5</div>
-        <div class="indletter">letter 6</div>
-        <div class="indletter">letter 7</div>
-        <div class="indletter">letter 8</div>
-        <div class="indletter">letter 9</div>
-        <div class="indletter">letter 10</div>
-        <div class="indletter">letter 11</div>
-        <div class="indletter">letter 12</div>
-        <div class="indletter">letter 13</div>
-        <div class="indletter">letter 14</div>
-        <div class="indletter">letter 15</div>
-        <div class="indletter">letter 16</div>
-        <div class="indletter">letter 17</div>
-        <div class="indletter">letter 18</div>
+
+            <div class="indletter" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">Letter 1</div>
+                    <div class="card-back">Happy Birthday Fikayo! You are one of a kind. 🎉</div>
+                </div>
+            </div>
+
+            <div class="indletter" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">Letter 2</div>
+                    <div class="card-back">18 years of pure joy and laughter. Keep shining! ✨</div>
+                </div>
+            </div>
+
+            <div class="indletter" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">Letter 3</div>
+                    <div class="card-back">Your smile lights up every room you walk into. 😊</div>
+                </div>
+            </div>
+
+            <div class="indletter" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">Letter 4</div>
+                    <div class="card-back">God has amazing plans for your future. Trust the process! 🙏</div>
+                </div>
+            </div>
+
+            <div class="indletter" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">Letter 5</div>
+                    <div class="card-back">You have grown into such an incredible person. So proud of you! 💪</div>
+                </div>
+            </div>
+
+            <div class="indletter" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">Letter 6</div>
+                    <div class="card-back">May this year be your best yet, full of blessings! 🌟</div>
+                </div>
+            </div>
+
+            <div class="indletter" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">Letter 7</div>
+                    <div class="card-back">Your kindness makes the world a better place. Never change! 💛</div>
+                </div>
+            </div>
+
+            <div class="indletter" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">Letter 8</div>
+                    <div class="card-back">18 looks absolutely amazing on you! 🎂</div>
+                </div>
+            </div>
+
+            <div class="indletter" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">Letter 9</div>
+                    <div class="card-back">You inspire everyone around you without even trying. 🌸</div>
+                </div>
+            </div>
+
+            <div class="indletter" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">Letter 10</div>
+                    <div class="card-back">The best is yet to come. Your story is just beginning! 📖</div>
+                </div>
+            </div>
+
+            <div class="indletter" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">Letter 11</div>
+                    <div class="card-back">Keep dreaming big — your goals are worth chasing! 🚀</div>
+                </div>
+            </div>
+
+            <div class="indletter" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">Letter 12</div>
+                    <div class="card-back">You are loved more than words can express. Happy 18th! ❤️</div>
+                </div>
+            </div>
+
+            <div class="indletter" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">Letter 13</div>
+                    <div class="card-back">May grace and mercy follow you all the days of your life. 🕊️</div>
+                </div>
+            </div>
+
+            <div class="indletter" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">Letter 14</div>
+                    <div class="card-back">Your potential is limitless. Go change the world! 🌍</div>
+                </div>
+            </div>
+
+            <div class="indletter" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">Letter 15</div>
+                    <div class="card-back">Wishing you a lifetime of happiness and good health! 🌈</div>
+                </div>
+            </div>
+
+            <div class="indletter" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">Letter 16</div>
+                    <div class="card-back">So grateful to celebrate this milestone with you! 🎊</div>
+                </div>
+            </div>
+
+            <div class="indletter" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">Letter 17</div>
+                    <div class="card-back">You are fearfully and wonderfully made. Never forget it! 💫</div>
+                </div>
+            </div>
+
+            <div class="indletter" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">Letter 18</div>
+                    <div class="card-back">18 years of being YOU — and the world is better for it. Happy Birthday! 🎁🎉</div>
+                </div>
+            </div>
+
         </div>
     </div>
+
+    <!-- Confetti canvas -->
+    <canvas id="confettiCanvas"></canvas>
+
+    <script>
+        // ── CARD FLIP ──────────────────────────────────────────
+        function flipCard(card) {
+            card.classList.toggle('flipped');
+            launchConfetti();
+        }
+
+        // ── CONFETTI ───────────────────────────────────────────
+        const canvas = document.getElementById('confettiCanvas');
+        const ctx = canvas.getContext('2d');
+        let confettiPieces = [];
+        let animating = false;
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+
+        const colors = ['#F36C5B', '#FFD700', '#FF69B4', '#87CEEB', '#98FB98', '#DDA0DD', '#FFA07A'];
+
+        function createConfetti() {
+            for (let i = 0; i < 80; i++) {
+                confettiPieces.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * -canvas.height,
+                    w: Math.random() * 10 + 6,
+                    h: Math.random() * 6 + 4,
+                    color: colors[Math.floor(Math.random() * colors.length)],
+                    rotation: Math.random() * 360,
+                    speedY: Math.random() * 3 + 2,
+                    speedX: (Math.random() - 0.5) * 2,
+                    spin: (Math.random() - 0.5) * 5
+                });
+            }
+        }
+
+        function drawConfetti() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            confettiPieces.forEach(p => {
+                ctx.save();
+                ctx.translate(p.x + p.w / 2, p.y + p.h / 2);
+                ctx.rotate((p.rotation * Math.PI) / 180);
+                ctx.fillStyle = p.color;
+                ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+                ctx.restore();
+                p.y += p.speedY;
+                p.x += p.speedX;
+                p.rotation += p.spin;
+            });
+            confettiPieces = confettiPieces.filter(p => p.y < canvas.height + 20);
+            if (confettiPieces.length > 0) {
+                requestAnimationFrame(drawConfetti);
+            } else {
+                animating = false;
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+            }
+        }
+
+        function launchConfetti() {
+            createConfetti();
+            if (!animating) {
+                animating = true;
+                drawConfetti();
+            }
+        }
+
+        // ── MUSIC TOGGLE ───────────────────────────────────────
+        const music = document.getElementById('bgMusic');
+        const musicBtn = document.getElementById('musicBtn');
+        let playing = false;
+
+        function toggleMusic() {
+            if (playing) {
+                music.pause();
+                musicBtn.innerHTML = '<i class="fas fa-music"></i>';
+                musicBtn.classList.remove('playing');
+            } else {
+                music.play().catch(() => {});
+                musicBtn.innerHTML = '<i class="fas fa-pause"></i>';
+                musicBtn.classList.add('playing');
+            }
+            playing = !playing;
+        }
+    </script>
 </body>
 </html>
