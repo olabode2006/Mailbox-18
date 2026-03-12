@@ -10,16 +10,6 @@
 </head>
 <body>
 
-    <!-- Music Toggle Button -->
-    <button id="musicBtn" onclick="toggleMusic()" title="Toggle music">
-        <i class="fas fa-music"></i>
-    </button>
-
-    <!-- Background music - replace src with your own audio file -->
-    <audio id="bgMusic" loop>
-        <source src="https://www.bensound.com/bensound-music/bensound-happyrock.mp3" type="audio/mpeg">
-    </audio>
-
     <h1 class="center">FikayoExpress</h1>
     <h2 class="center">Celebrating 18 years of God's Mercy and Grace</h2>
     <h3 class="center">Your delivery service is activated on your big day!</h3>
@@ -228,23 +218,7 @@
             }
         }
 
-        // ── MUSIC TOGGLE ───────────────────────────────────────
-        const music = document.getElementById('bgMusic');
-        const musicBtn = document.getElementById('musicBtn');
-        let playing = false;
 
-        function toggleMusic() {
-            if (playing) {
-                music.pause();
-                musicBtn.innerHTML = '<i class="fas fa-music"></i>';
-                musicBtn.classList.remove('playing');
-            } else {
-                music.play().catch(() => {});
-                musicBtn.innerHTML = '<i class="fas fa-pause"></i>';
-                musicBtn.classList.add('playing');
-            }
-            playing = !playing;
-        }
     </script>
 </body>
 </html>
